@@ -23,7 +23,8 @@ Left = "Arrow Left"
 Right = "Arrow Right"
 Shoot = "NumPad , (Comma)" 
 
-Note: Running the game will replace ImageMagick register settings for version 6.4.1 in order to use the library that comes with the game.
+Windows users:
+Running the game will replace ImageMagick register settings for version 6.4.1 in order to use the library that comes with the game.
 
 Contact information:
 trejje<*%&&/at>gmail.com
