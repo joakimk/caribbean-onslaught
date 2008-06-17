@@ -28,7 +28,7 @@ class Menu
     @menu_inputs = [ GamePadInput.new, Keyboard0Input.new, Keyboard1Input.new ]
     @button_pressed = button_pressed
 
-    @menu = Gosu::Image.new(@window, "data/caribbean_onslaught_splash.png", true)
+    @menu = Gosu::Image.new(@window, "../data/caribbean_onslaught_splash.png", true)
     @menu_sword = Sprite.new('swordmarker', -1)   
   end
   

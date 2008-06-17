@@ -29,12 +29,12 @@ class Level
     @window = Game.window
     @scale = @window.scale
     
-    @water0 = Gosu::Image.new(@window, "data/sprites/water_01.png", true)
-    @water1 = Gosu::Image.new(@window, "data/sprites/water_02.png", true)
-    @ship = Gosu::Image.new(@window, "data/pirateship_level.png", true)
-    @overlay = Gosu::Image.new(@window, "data/pirateship_level_overlay.png", true)
-    @overlay2 = Gosu::Image.new(@window, "data/pirateship_level_mast.png", true)
-    @collision_map = Magick::Image.read('data/pirateship_level_col.png').first
+    @water0 = Gosu::Image.new(@window, "../data/sprites/water_01.png", true)
+    @water1 = Gosu::Image.new(@window, "../data/sprites/water_02.png", true)
+    @ship = Gosu::Image.new(@window, "../data/pirateship_level.png", true)
+    @overlay = Gosu::Image.new(@window, "../data/pirateship_level_overlay.png", true)
+    @overlay2 = Gosu::Image.new(@window, "../data/pirateship_level_mast.png", true)
+    @collision_map = Magick::Image.read('../data/pirateship_level_col.png').first
   
     #@start_area = Rect.new(360, 340, 930, 380)
     @progress = 0

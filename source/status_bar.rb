@@ -20,7 +20,7 @@ class StatusBar
 	def initialize
 	  @window = Game.window
 		@scale = @window.scale
-		@image = Gosu::Image.new(@window, "data/sprites/white.png", true)
+		@image = Gosu::Image.new(@window, "../data/sprites/white.png", true)
 	end
 	
 	def draw(character_position, rel_y, size, color)
