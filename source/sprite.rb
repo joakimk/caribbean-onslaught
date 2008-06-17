@@ -69,9 +69,9 @@ class Sprite
 	
 	def load_images(base_name)
 		images = []
-		Dir.foreach("data/sprites") do |file|
+		Dir.foreach("../data/sprites") do |file|
 			if file.include?(base_name)
-				images << Gosu::Image.new(@window, "data/sprites/#{file}", true)
+				images << Gosu::Image.new(@window, "../data/sprites/#{file}", true)
 			end
 		end		
 				

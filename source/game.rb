@@ -32,7 +32,7 @@ class Game < Gosu::Window
 		
   def initialize
     @@instance = self
-    @settings = Settings.new('settings.yml')            
+    @settings = Settings.new('../settings.yml')            
     super(@settings.width, @settings.height, @settings.fullscreen)
     
     self.caption = 'Caribbean Onslaught v0.1.2'
@@ -40,9 +40,9 @@ class Game < Gosu::Window
     @scale = @settings.height.to_f / 800    
             
     start_menu
-    @sound_shot = Gosu::Sample.new(self, 'data/sounds/gun.wav')
-    @sound_splat = Gosu::Sample.new(self, 'data/sounds/splat.wav')
-    @sound_hit = Gosu::Sample.new(self, 'data/sounds/hit.wav')
+    @sound_shot = Gosu::Sample.new(self, '../data/sounds/gun.wav')
+    @sound_splat = Gosu::Sample.new(self, '../data/sounds/splat.wav')
+    @sound_hit = Gosu::Sample.new(self, '../data/sounds/hit.wav')
   end
   
   def start_score
