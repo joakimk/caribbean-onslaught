@@ -1,0 +1,4 @@
+All images and sounds are licenced under the " Creative Commons Attribution 3.0 Unported" licence as
+described here: http://creativecommons.org/licenses/by/3.0/.
+
+See the header of the source files for the licence that applies to them.

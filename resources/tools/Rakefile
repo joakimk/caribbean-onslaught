@@ -1,0 +1,46 @@
+require 'time'
+require 'find'
+
+base_name = "CaribbeanOnslaught"
+name = "#{base_name}_#{Time.now.strftime('%Y-%m-%d_%H%S')}"
+
+def delete_svn(path)
+  Find.find(path) do |path|
+    if path.include? ".svn"
+      FileUtils.rm_rf(path)
+    end
+  end
+end
+
+def do_commands(commands)
+  system(commands.join(';'))
+end
+
+task :deploy do
+  copy_and_clean_resources = [
+    'cd ../..',
+    "mkdir -p ../Release/#{name}",
+    "cp -rf * ../Release/#{name}",
+    "cd ../Release",
+    "rm -rf #{name}/resources",
+    "rm -rf #{name}/.eprj"
+  ]
+      
+  add_default_settings = [
+    "cd ../../../Release",
+    "mv #{name}/settings.yml.example #{name}/settings.yml"
+  ]
+
+  create_archive = [
+    "cd ../../../Release",
+    "tar cfz #{name}.tar.gz #{name}",
+    "rm -rf #{name}"
+  ]  
+  
+  do_commands copy_and_clean_resources
+  do_commands add_default_settings  
+  delete_svn("../../../Release/#{name}")
+  do_commands create_archive
+
+  do_commands [ "wc -c ../../../Release/#{name}.tar.gz"]
+end

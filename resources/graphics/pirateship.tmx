@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+<map version="0.99b" orientation="orthogonal" width="32" height="64" tilewidth="64" tileheight="64">
+ <tileset name="shiptiles" firstgid="1" tilewidth="64" tileheight="64">
+  <image source="shiptiles2x.png"/>
+ </tileset>
+ <layer name="Water_mod" width="32" height="64">
+  <data encoding="base64" compression="gzip">
+   H4sIAAAAAAAAAO3DwQkAAAwDoXtm/4k7R0HBVVNVVVVVVVVVXz8NMQiwACAAAA==
+  </data>
+ </layer>
+ <layer name="GroundLayer" width="32" height="64">
+  <data encoding="base64" compression="gzip">
+   H4sIAAAAAAAAAO3Xz0tUURQH8DuzaFa2aRG08O9RE0oFlcA0bGEm/loo/ogasbQfukjRUEwSFRWtUFFEyjBd6cpE+yEqWUGpC3Wffi/dx1wf5z1fcN4dGd6BD2+4Z3hfDvfOhREiqPNUKZAKaXDV5XO6T/nX4DpkuMiELJ/ysyEHcl3I/g2f8vPgJuS7KIBbPmQXwm1Y86AI7jDnF8NdGPOgDMqZ8yugEh5AI9RCnaZe61VBNXO+3PsaeKpEoQEuqGdU690TvGdA3/tWeA7N8BiS1POJ1uM+A9bey/d62X/5Pc4zYO39/+RznoH74t/ZsuuATnjh0H/IlP8Imgg98BJ6HfrPmPJbYITQDwMwCK8JbUz57cLbvtt1MeV3u2SMuvReMeX3qfetExkTxJr1vSGm/GEiw4s3TPlvxem5xhU9a1LRvzfFnG+ZUfS1WUVf486n9p/CPf+0Q45+/1H9d8z59vn1+4+anzvfTr//wkSfKz/e+28//14lyvm3z0/dP9SaX/NTd42+Zur3fxa/f38m8+egBEpF7L+Hfv9Z/0E+wDx8hAWm/PeCns/p/rNw5S86vF+//6j+ElN+UEHptSzo87ZiKP8TrNqyP8MXQ/lf4RtsqOxN2IJtQ/myvsMO/ICf8Mtg9qWQEL/x/AO7sAf7cDlkJv+KyjmAQzhS68mG8mX9hWP5AZkhCBvMtkrOHwnF5jdZ52F+WZE45Vp1Mc75QQUVVFBBJV6dALRj/fQAIAAA
+  </data>
+ </layer>
+ <layer name="AddLayer" width="32" height="64">
+  <data encoding="base64" compression="gzip">
+   H4sIAAAAAAAAAO3OMQqAQAxE0QU7r6Q24qnURm1kT+0uTGFjJewU+Q+GJNUkJQD41pn7e3M/4llLNu2TZr33Rv1Hyal90az31aj/Vt6yAiCOwdw/m/sBxDW6HwAAAAAA4KcH1FPDrgAgAAA=
+  </data>
+ </layer>
+</map>

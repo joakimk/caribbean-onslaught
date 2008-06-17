@@ -1,0 +1,66 @@
+### Pirates vs zombies - a simple design ###
+
+--- Intro ---
+Okey, first idea I get when looking at the theme, is a typical Pirates of
+the caribean theme. And since we only have like 3 days to make it, we
+need a really simple game, how about building it on top of the
+RubyDogfight game?
+
+When you have pirates and zombies as main characters, and the first
+thing I think about is pirates of the caribean, I want to be a pirate... the
+zombies are known to be "the bad guys". So, we are pirates!
+
+--- First steps --- 
+* First thing we need to do with the RubyDogFight game, is to change the plane models to pirates.
+* Second thing is to lower the velocity while not pressing the [move] buttons, so we get a feeling of walking.
+* Third is offcourse to change the background to some ship "model", maybe it should be a pier next to the ship aswell, if the ship havn't been lanched yet.
+
+--- Basic Features ---
+Whit this as our base, we have a basic game idea, now to add features:
+
+* Collision - When we have a ship "model" we need collision, you can't
+just walk out of the "model" onto the water without drowning or getting
+stopped by the ship fence (if there is a fence, it might be brokend after
+all!), and you can't just walk into the ship structures and mainmast either.
+
+* Zombies! - Ok, so we know how to move, we know how to shoot, heck
+we can't even move wherever we want... so now we need, yep zombies!
+I want to shoot at something!. In rubyDogfight we mainly had multiplay,
+and those multiplayer objects atleast made it fun to play with friends.
+Lets change those to zombies and make them computer controlled...
+which brings us to the next feature...
+
+* AI - I know this might be rather hard, but lets make it simple... the only
+thing the zombies should do, as a start! is avoid the collision objects and
+move towards the player(s), when they get close to a player they start
+beating the crap out of him (the "beating the crap out of him" could just 
+be "emulated" bullets, with a very short range, we don't want those 
+bastards to have some telekinesis attacks now do we? :P).
+
+--- Extra Features (if time allows) ---
+The features we have until now, makes the basic idea for the game. With 
+these the games is atleast playable, and heck it could even be fun to 
+play, now for some more "extravagant" ideas these don't need to be added 
+in chronological order either.
+
+* Multiplayer - I think this sholdnt be to hard to add as it's already 
+implemented in RubyDogFight, but what we might need to add is features 
+for Friendly Fire, it could be rather annoying if you hurt your own team 
+mates in a game like this, so an option that lets you choose Friendly Fire, 
+true or false to the game.
+
+* Scrolling - Just having a static game field as we have in RubyDogFight 
+could be a rather small area in this case, so lets make the game field scroll 
+if we move towards the screen edges, this might need some fancy scroll 
+algorithms to handle several players thou, and maybe a virtual collision 
+wall, if the players walk to far away from eachother.
+
+* Special attacks - Ok, so we are pirates, we have a gun that we can fire 
+towards zombies, and this makes the game a typical top down 2D shooter 
+scroller game. Lets make this "our" game!. A pirate is known for there elite 
+fencing skills, and these zombies could indeed be alot to handle with a 
+simple gun if they come too close to you... in masses, so I want to add a 
+sort of streetfighter combo mode, that makes you deal basic blade swings 
+and AOE attacks with combinations like A-A-B,  FWD-BCK-FWD-A, etc, 
+etc. This is something that would distinct our game, from all the other top 
+down 2D scrollers out there.
