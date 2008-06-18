@@ -32,10 +32,20 @@ class Deploy
     system(commands.join(';'))
   end
   
-  def self.run  
+  def self.run(version = nil) 
     base_name = "CaribbeanOnslaught"
-    name = "#{base_name}_#{Time.now.strftime('%Y-%m-%d_%H%S')}"
-    
+        
+    if version
+      name = "#{base_name}_v#{version}"
+      
+      if File.exists?("../../../Release/#{name}.zip")
+        puts "The specified version already exists (#{version})"
+        return
+      end
+    else
+      name = "#{base_name}_#{Time.now.strftime('%Y-%m-%d_%H%S')}"
+    end
+        
     copy_and_clean_resources = [
       'cd ../..',
       "mkdir -p ../Release/#{name}",
@@ -52,7 +62,7 @@ class Deploy
   
     create_archive = [
       "cd ../../../Release",
-      "tar cfz #{name}.tar.gz #{name}",
+      "zip -r -9 #{name}.zip #{name}",
       "rm -rf #{name}"
     ]  
     
@@ -61,6 +71,6 @@ class Deploy
     delete_svn("../../../Release/#{name}")
     do_commands create_archive
   
-    do_commands [ "wc -c ../../../Release/#{name}.tar.gz"]
+    do_commands [ "wc -c ../../../Release/#{name}.zip"]
   end
 end

@@ -24,6 +24,7 @@ end
 require 'gosu'
 
 require File.dirname(__FILE__)  + '/settings.rb'
+require File.dirname(__FILE__)  + '/version.rb'
 require File.dirname(__FILE__)  + '/player.rb'
 require File.dirname(__FILE__)  + '/zombie.rb'
 require File.dirname(__FILE__)  + '/menu.rb'
@@ -41,7 +42,7 @@ class Game < Gosu::Window
     @settings = Settings.new('../settings.yml')            
     super(@settings.width, @settings.height, @settings.fullscreen)
     
-    self.caption = 'Caribbean Onslaught v0.1.3'
+    self.caption = "Caribbean Onslaught v#{$VERSION}"
       	
     @scale = @settings.height.to_f / 800    
             
