@@ -5,23 +5,24 @@ This game was made as a contribution for a Ruby games contest held at rubygamefo
 You can find more info at:
 http://github.com/joakimk/caribbean-onslaught/wikis/caribbean-onslaught
 
-The controls can be changed in settings.yml. The standard controls is:
+The controls can be changed in settings.yml (and by editing source/input/*). The standard controls is:
 
-Player 1 = "GamePadInput"
+Player 1
+  Up = "Arrow Up"
+  Down = "Arrow Down"
+  Left = "Arrow Left"
+  Right = "Arrow Right"
+  Shoot = "Right Shift" 
 
-Player 2 = "Keyboard1Input"
-Up = "W"
-Down = "S"
-Left = "A"
-Right = "D"
-Shoot = "J"
+Player 2
+  Up = "E"
+  Down = "D"
+  Left = "S"
+  Right = "F"
+  Shoot = "Left Shift"
 
-Player 3 = "Keyboard0Input"
-Up = "Arrow Up"
-Down = "Arrow Down"
-Left = "Arrow Left"
-Right = "Arrow Right"
-Shoot = "NumPad , (Comma)" 
+Player 3
+  GamePad
 
 Windows:
 Install ruby, get it from: http://www.ruby-lang.org/en/downloads/
