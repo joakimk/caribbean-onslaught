@@ -23,6 +23,14 @@ Left = "Arrow Left"
 Right = "Arrow Right"
 Shoot = "NumPad , (Comma)" 
 
+Windows:
+Install ruby, get it from: http://www.ruby-lang.org/en/downloads/
+Run the game with "run_game.cmd".
+
+Linux / MacOSX:
+You need Ruby and gosu (gem install gosu).
+Run the game with "cd source; ruby game.rb".
+
 Thanks goes out to:
 jlnr @ Rubygameforums: For patching the game to run on MacOSX.
 

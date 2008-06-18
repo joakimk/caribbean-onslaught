@@ -41,7 +41,7 @@ class Game < Gosu::Window
     @settings = Settings.new('../settings.yml')            
     super(@settings.width, @settings.height, @settings.fullscreen)
     
-    self.caption = 'Caribbean Onslaught v0.1.2'
+    self.caption = 'Caribbean Onslaught v0.1.3'
       	
     @scale = @settings.height.to_f / 800    
             
