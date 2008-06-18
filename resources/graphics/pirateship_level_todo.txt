@@ -1,8 +1,6 @@
-Saker som borde ändras:
-* "Elden" högst upp på skeppet
-* Trapporna
-* Kanterna
-* Luckorna
-* Repet
-* Masterna och "maststativen"
-* Förens trofé
+Things that needs changing:
+* Sides Still needs "textures".
+* Floor Enteties needs "textures".
+* The rope next to the main mast needs "textures".
+* The masts needs "textures".
+* The trofé at the front needs a bit more uniqueness.
