@@ -1,6 +1,6 @@
 players:
   - name: Player1
-    input: GamePadInput
+    input: Keyboard0Input
     character: jack
     
   - name: Player2
@@ -8,7 +8,7 @@ players:
     character: jack    
     
   - name: Player3
-    input: Keyboard0Input
+    input: GamePadInput
     character: jack
 
 game:
