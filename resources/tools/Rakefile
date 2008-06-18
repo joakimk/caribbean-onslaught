@@ -17,15 +17,22 @@
 # 3. This notice may not be removed or altered from any source distribution.
 
 require File.dirname(__FILE__) + '/source/deploy.rb'
-require File.dirname(__FILE__) + '/source/cmap_converter.rb'
 
 desc 'Creates a .zip that only includes the game essentials (in ../../../Release)'
 task :deploy do
-  Deploy.run
+  if Dir.pwd[1..1] == ':'
+    puts 'You must run this in cygwin'  
+  else
+    Deploy.run
+  end  
 end
 
-desc 'Converts the collision-map into something more simple to load'
-task :convert_cmap do
-  converter = CmapConverter.new
-  converter.convert("../../data/pirateship_level_col.png", "../../data/pirateship_level_col.info")
+desc 'Creates a .zip from the version specified in source/version.rb'
+task :deploy_version do
+  if Dir.pwd[1..1] == ':'
+    puts 'You must run this in cygwin'  
+  else
+    require '../../source/version.rb'
+    Deploy.run($VERSION)
+  end  
 end
