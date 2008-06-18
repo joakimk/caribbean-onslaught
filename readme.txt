@@ -3,7 +3,7 @@ Caribbean Onslaught
 This game was made as a contribution for a Ruby games contest held at rubygameforums.com.
 
 You can find more info at:
-http://codecreations.se/games/caribbean_onslaught
+http://github.com/joakimk/caribbean-onslaught/wikis/caribbean-onslaught
 
 The controls can be changed in settings.yml. The standard controls is:
 
@@ -22,9 +22,6 @@ Down = "Arrow Down"
 Left = "Arrow Left"
 Right = "Arrow Right"
 Shoot = "NumPad , (Comma)" 
-
-Windows users:
-Running the game will replace ImageMagick register settings for version 6.4.1 in order to use the library that comes with the game.
 
 Thanks goes out to:
 jlnr @ Rubygameforums: For patching the game to run on MacOSX.

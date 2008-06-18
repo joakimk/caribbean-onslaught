@@ -16,7 +16,6 @@
 #    be misrepresented as being the original software.
 # 3. This notice may not be removed or altered from any source distribution.
 
-require 'RMagick2'
 require File.dirname(__FILE__)  + '/rect.rb'
 require File.dirname(__FILE__)  + '/flow.rb'
 
@@ -34,7 +33,8 @@ class Level
     @ship = Gosu::Image.new(@window, "../data/pirateship_level.png", true)
     @overlay = Gosu::Image.new(@window, "../data/pirateship_level_overlay.png", true)
     @overlay2 = Gosu::Image.new(@window, "../data/pirateship_level_mast.png", true)
-    @collision_map = Magick::Image.read('../data/pirateship_level_col.png').first
+    @collision_map = File.readlines('../data/pirateship_level.cmap')
+    
   
     #@start_area = Rect.new(360, 340, 930, 380)
     @progress = 0
@@ -63,7 +63,7 @@ class Level
   end
   
   def valid_position?(x, y)
-    @collision_map.pixel_color(x - 128, + y).red != 0
+    @collision_map[x - 128][y] == '1'[0]
   end
   
   def generate_spawn_position(monster)
