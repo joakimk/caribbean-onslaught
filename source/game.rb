@@ -16,7 +16,13 @@
 #    be misrepresented as being the original software.
 # 3. This notice may not be removed or altered from any source distribution.
 
+begin
+  require 'rubygems'
+rescue LoadError
+end
+
 require 'gosu'
+
 require File.dirname(__FILE__)  + '/settings.rb'
 require File.dirname(__FILE__)  + '/player.rb'
 require File.dirname(__FILE__)  + '/zombie.rb'

@@ -19,24 +19,24 @@
 require File.dirname(__FILE__) + "/input.rb"
 
 class Keyboard1Input < Input
-	def left?
-		key_down? 30 # A
+  def left?
+		key_down? char('s')
 	end
 	
 	def right?
-		key_down? 32 # D
+		key_down? char('f')
 	end
 	
   def up?
-    key_down? 17 # W
+    key_down? char('e')
   end
 
   def down?
-    key_down? 31 # S
+    key_down? char('d')
   end
 	
 	def fire?
-		key_down? 36 # J
+		key_down? Gosu::KbLeftShift
 	end
 
 	#def pause?

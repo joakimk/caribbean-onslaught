@@ -26,4 +26,8 @@ class Input
 	def key_down?(button)
 		@window.button_down? button
 	end	
+	
+	def char(ch)
+	  @window.char_to_button_id(ch)
+	end	
 end

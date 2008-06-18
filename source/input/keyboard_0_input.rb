@@ -36,7 +36,7 @@ class Keyboard0Input < Input
   end
 
 	def fire?
-		key_down? 83 # Numpad delete
+		key_down? Gosu::KbRightShift
 	end
 	
 	#def pause?
