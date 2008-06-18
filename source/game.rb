@@ -22,6 +22,7 @@ rescue LoadError
 end
 
 require 'gosu'
+require 'yaml'
 
 require File.dirname(__FILE__)  + '/settings.rb'
 require File.dirname(__FILE__)  + '/version.rb'
